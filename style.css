@@ -2,6 +2,7 @@
 header{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .logo{
 color: black;
@@ -73,7 +74,7 @@ padding-top: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .first img, .second img{
-   margin-bottom: 10px;
+    margin-bottom: 10px;
     width: 100%;
 }
 .one, .three{
@@ -81,7 +82,8 @@ padding-top: 10px;
     width: 33%;
 }
 .two{
-display: flexbox;
+display: flex;
+flex-direction: column;
 align-items: center;
 margin: 15px 5px;
 width: 33%;
@@ -97,5 +99,44 @@ font-size: 15px;
 .top3A, .top3B, .top3C{
     display: flex;
     padding: 20px 2px;
-    
+}
+
+.image img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1023px){
+    .first,.second{
+        flex-direction: column;
+    }
+    .two{
+        flex-direction: row;
+    }
+    .one,.three{
+        display: flex;
+        width: 100%;
+    }
+    .one img,.three img{
+        width: 45%;
+    }
+    .text{
+        margin:0 1em ;
+    }
+    .two{
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px){
+    .two{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:481px){
+    .one,.three{
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        margin: 0;
+    }
 }
