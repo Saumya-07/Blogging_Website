@@ -13,7 +13,10 @@ close.addEventListener('click',() => {
     navHorizontal.classList.add('hide');
     navHorizontal.classList.remove('show');
 })
-
+window.onscroll = function(){
+    navHorizontal.classList.add('hide');
+    navHorizontal.classList.remove('show');
+}
 const views=document.getElementById('views');
 const users=document.getElementById('users');
 

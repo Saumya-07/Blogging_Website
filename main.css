@@ -71,7 +71,7 @@ body{
     position: absolute;
     top: 0px;
     left:-300px;
-    transition:2s ease-in;
+    transition: 2s ease-in-out;
     transform: translateX(300px);
     font-size: 20px;
 }
